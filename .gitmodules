@@ -1,0 +1,9 @@
+[submodule "packages/rw-dispatcher-helper"]
+	path = packages/rw-dispatcher-helper
+	url = git@github.com:tedtse/rw-dispatcher-helper.git
+[submodule "packages/iview-rw-dispatcher"]
+	path = packages/iview-rw-dispatcher
+	url = git@github.com:tedtse/iview-rw-dispatcher.git
+[submodule "packages/element-ui-rw-dispatcher"]
+	path = packages/element-ui-rw-dispatcher
+	url = git@github.com:tedtse/element-ui-rw-dispatcher.git

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "开发指南",
+    "children": [
+      {
+        "path": "/quickstart",
+        "title": "快速上手"
+      },
+      {
+        "path": "/form",
+        "title": "Form 表单示例"
+      },
+      {
+        "path": "/global-config",
+        "title": "全局配置"
+      },
+      {
+        "path": "/local-config",
+        "title": "局部配置"
+      },
+      {
+        "path": "/config-priority",
+        "title": "配置优先级"
+      }
+    ]
+  },
+  {
+    "name": "组件",
+    "children": [
+      {
+        "path": "/input-dispatcher",
+        "title": "Input 输入框"
+      },
+      {
+        "path": "/input-number-dispatcher",
+        "title": "InputNumber 计数器"
+      },
+      {
+        "path": "/select-dispatcher",
+        "title": "Select 选择器"
+      },
+      {
+        "path": "/checkbox-dispatcher",
+        "title": "Checkbox 多选框"
+      },
+      {
+        "path": "/radio-dispatcher",
+        "title": "Radio 单选框"
+      },
+      {
+        "path": "/date-picker-dispatcher",
+        "title": "DatePicker 日期选择器"
+      },
+      {
+        "path": "/time-picker-dispatcher",
+        "title": "TimePicker 时间选择器"
+      },
+      {
+        "path": "/switch-dispatcher",
+        "title": "Switch 开关"
+      },
+      {
+        "path": "/rate-dispatcher",
+        "title": "Rate 评分"
+      },
+      {
+        "path": "/slider-dispatcher",
+        "title": "Slider 滑块"
+      }
+    ]
+  }
+]
