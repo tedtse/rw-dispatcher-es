@@ -15,6 +15,7 @@ module.exports = {
   ],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
+    '^iview-rw-dispatcher$': '<rootDir>/packages/iview-rw-dispatcher',
     '^element-ui-rw-dispatcher$': '<rootDir>/packages/element-ui-rw-dispatcher',
     '^rw-dispatcher-helper$': '<rootDir>/packages/rw-dispatcher-helper/lib'
   },
