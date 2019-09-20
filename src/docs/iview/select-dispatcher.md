@@ -158,23 +158,29 @@ export default {
 :::demo
 ```html
 <template>
-  <div>
-    <SelectDispatcher v-model="model2" size="small" style="width:100px">
-      <Option v-for="item in cityList" :value="item.value" :key="item.value">
-        {{ item.label }}
-      </Option>
-    </SelectDispatcher>
-    <SelectDispatcher v-model="model3" style="width:100px">
-      <Option v-for="item in cityList" :value="item.value" :key="item.value">
-        {{ item.label }}
-      </Option>
-    </SelectDispatcher>
-    <SelectDispatcher v-model="model4" size="large" style="width:100px">
-      <Option v-for="item in cityList" :value="item.value" :key="item.value">
-        {{ item.label }}
-      </Option>
-    </SelectDispatcher>
-  </div>
+  <Row>
+    <Col span="8">
+      <SelectDispatcher v-model="model2" size="small" style="width:100px">
+        <Option v-for="item in cityList" :value="item.value" :key="item.value">
+          {{ item.label }}
+        </Option>
+      </SelectDispatcher>
+    </Col>
+    <Col span="8">
+      <SelectDispatcher v-model="model3" style="width:100px">
+        <Option v-for="item in cityList" :value="item.value" :key="item.value">
+          {{ item.label }}
+        </Option>
+      </SelectDispatcher>
+    </Col>
+    <Col span="8">
+      <SelectDispatcher v-model="model4" size="large" style="width:100px">
+        <Option v-for="item in cityList" :value="item.value" :key="item.value">
+          {{ item.label }}
+        </Option>
+      </SelectDispatcher>
+    </Col>
+  </Row>
 </template>
 
 <script>

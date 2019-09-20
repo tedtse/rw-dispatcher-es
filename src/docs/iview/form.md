@@ -6,6 +6,9 @@
     <FormItem label="活动名称">
       <InputDispatcher v-model="form.name" placeholder="Enter something..." />
     </FormItem>
+    <FormItem label="活动等级">
+      <RateDispatcher v-model="form.level" />
+    </FormItem>
     <FormItem label="活动区域">
       <SelectDispatcher v-model="form.region">
         <Option value="New York">New York</Option>
@@ -23,6 +26,9 @@
           <TimePickerDispatcher type="time" placeholder="Select time" v-model="form.date2" />
         </Col>
       </Row>
+    </FormItem>
+    <FormItem label="持续时间">
+      <SliderDispatcher v-model="form.duration" :tip-format="tipFormat" />
     </FormItem>
     <FormItem label="即时配送">
       <SwitchDispatcher v-model="form.delivery" />
@@ -58,6 +64,8 @@ export default {
       form: {
         name: '618电器折扣日',
         region: 'London',
+        level: 5,
+        duration: 7,
         date1: '2019-06-18',
         date2: new Date(2019, 6, 18, 0, 0, 0),
         delivery: false,
@@ -65,6 +73,11 @@ export default {
         resource: '线下场地免费',
         desc: '凡在实体店购买指定商品，立刻过得赠品一份'
       }
+    }
+  },
+  methods: {
+    tipFormat (val) {
+      return val + '天'
     }
   }
 }

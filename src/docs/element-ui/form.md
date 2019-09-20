@@ -2,9 +2,12 @@
 :::demo
 ```html
 <template>
-  <el-form ref="form" :model="form" label-width="80px">
+  <el-form ref="form" :model="form" class="form-demo" label-width="80px">
     <el-form-item label="活动名称">
       <el-input-dispatcher v-model="form.name" />
+    </el-form-item>
+    <el-form-item label="活动等级">
+      <el-rate-dispatcher v-model="form.level" />
     </el-form-item>
     <el-form-item label="活动区域">
       <el-select-dispatcher v-model="form.region" placeholder="请选择活动区域">
@@ -20,6 +23,9 @@
       <el-col :span="11">
         <el-time-picker-dispatcher placeholder="选择时间" v-model="form.date2" style="width: 100%;" />
       </el-col>
+    </el-form-item>
+    <el-form-item label="持续时间">
+      <el-slider-dispatcher v-model="form.duration" :format-tooltip="formatTooltip" />
     </el-form-item>
     <el-form-item label="即时配送">
       <el-switch-dispatcher v-model="form.delivery" />
@@ -53,6 +59,8 @@ export default {
     return {
       form: {
         name: '618电器折扣日',
+        level: 5,
+        duration: 7,
         region: 'shanghai',
         date1: '2019-06-18',
         date2: new Date(2019, 6, 18, 0, 0, 0),
@@ -64,6 +72,9 @@ export default {
     }
   },
   methods: {
+    formatTooltip (val) {
+      return val + '天'
+    },
     onSubmit () {
       console.log('submit!')
     }
@@ -72,6 +83,16 @@ export default {
 </script>
 ```
 :::
+
+*附加样式*
+```css
+.form-demo {
+  .el-rate, .el-rate__icon {
+    height: 40px;
+    line-height: 40px;
+  }
+}
+``` 
 
 ### 表单内组件尺寸控制
 :::demo

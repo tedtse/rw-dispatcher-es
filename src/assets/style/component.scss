@@ -156,6 +156,21 @@
     transform: translateY(-30px);
     opacity: 0;
   }
+
+  .form-demo {
+    .el-rate, .el-rate__icon {
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+
+  .slider-demo {
+    padding: 20px;
+    .rw-dispatcher-ivu-slider {
+      margin: 16px 0;
+      line-height: 1;
+    }
+  }
 }
 
 @media (max-width: 768px) {
