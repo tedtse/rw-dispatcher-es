@@ -21,7 +21,7 @@ import iViewRwDispatcher from 'iview-rw-dispatcher'
 import 'iview-rw-dispatcher/styles/index.less'
 import App from './App.vue'
 
-Vue.use(ElementUiRwDispatcher)
+Vue.use(iViewRwDispatcher)
 
 new Vue({
   el: '#app',

@@ -185,7 +185,7 @@ export default {
 ### Switch Attributes
 <iview-attributes>
   <template #append>
-    <tr>
+    <!-- <tr>
       <td>${namespace}-trueValue<br />（默认 rw-dispatcher-trueValue</td>
       <td>"read" 转态下 Switch 为真时的文字提示</td>
       <td>String</td>
@@ -196,7 +196,7 @@ export default {
       <td>"read" 转态下 Switch 为假时的文字提示</td>
       <td>String</td>
       <td>否</td>
-    </tr>
+    </tr> -->
   </template>
 </iview-attributes>
 

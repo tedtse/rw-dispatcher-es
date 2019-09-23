@@ -4,10 +4,10 @@
 ### 使用
 ```javascript
 import Vue from 'vue'
-import ElementUiRwDispatcher from 'iview-rw-dispatcher'
+import iViewRwDispatcher from 'iview-rw-dispatcher'
 import 'iview-rw-dispatcher/styles/index.less'
 
-Vue.use(ElementUiRwDispatcher, {
+Vue.use(iViewRwDispatcher, {
   namespace: 'rw-dispatcher',
   trueValue: '是',
   falseValue: '否',
@@ -91,7 +91,7 @@ Vue.use(ElementUiRwDispatcher, {
 
 | 可配置项 | 说明 | 类型 |
 | ---- | -------- | ---- |
-| input | ElInputDispatcher 自定义渲染函数 | Function |
+| input | InputDispatcher 自定义渲染函数 | Function |
 | inputNumber | InputNumberDispatcher 自定义渲染函数 | Function |
 | autocomplete | AutocompleteDispatcher 自定义渲染函数 | Function |
 | select | SelectDispatcher 自定义渲染函数 | Function |
