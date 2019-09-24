@@ -264,11 +264,9 @@ export default {
           return null
         }
       })
-      .filter(item => item)
+        .filter(item => item)
       return h('div', {
-        style: {
-          color: 'green'
-        }
+        style: { color: 'green' }
       }, vnodes)
     }
   }

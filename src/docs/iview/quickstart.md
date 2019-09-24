@@ -17,10 +17,13 @@ yarn add iview-rw-dispatcher
 
 ```javascript
 import Vue from 'vue'
+import iView from 'iview'
+import 'iview/dist/styles/iview.css'
 import iViewRwDispatcher from 'iview-rw-dispatcher'
 import 'iview-rw-dispatcher/styles/index.less'
 import App from './App.vue'
 
+Vue.use(iView)
 Vue.use(iViewRwDispatcher)
 
 new Vue({

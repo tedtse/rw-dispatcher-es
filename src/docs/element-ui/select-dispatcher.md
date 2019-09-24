@@ -528,7 +528,7 @@ export default {
           return null
         }
       })
-      .filter(item => item)
+        .filter(item => item)
       return h('div', vnodes)
     }
   }

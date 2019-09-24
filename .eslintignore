@@ -1,2 +1,4 @@
 src/docs
 packages/rw-dispatcher-helper/lib
+packages/element-ui-rw-dispatcher/rw-dispatcher.js
+packages/iview-rw-dispatcher/rw-dispatcher.js
