@@ -99,7 +99,7 @@ Vue.use(iViewRwDispatcher, {
 | checkboxGroup | CheckboxGroupDispatcher 自定义渲染函数 | Function |
 | radio | RadioDispatcher 自定义渲染函数 | Function |
 | radioGroup | RadioGroupDispatcher 自定义渲染函数 | Function |
-| switch | SwitchDispatcher 自定义渲染函数 | Function |
+| iSwitch | SwitchDispatcher 自定义渲染函数 | Function |
 | datePicker | DatePickerDispatcher 自定义渲染函数 | Function |
 | timePicker | TimePickerDispatcher 自定义渲染函数 | Function |
 | rate | RateDispatcher 自定义渲染函数 | Function |

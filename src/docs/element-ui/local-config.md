@@ -18,12 +18,12 @@
 </template>
 <script>
 export default {
-  provide() {
+  provide () {
     return {
       rwDispatcherProvider: this
     }
   },
-  data() {
+  data () {
     return {
       rwDispatcherState: 'write',
       rwDispatcherConfig: {

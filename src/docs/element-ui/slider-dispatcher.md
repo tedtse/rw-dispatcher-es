@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       value1: 0,
       value2: 50,
@@ -63,7 +63,7 @@ export default {
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       value1: [4, 8],
       value2: [30, 60],

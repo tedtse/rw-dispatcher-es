@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       value1: null,
       value2: null,
@@ -35,7 +35,7 @@ export default {
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       value: null
     }
