@@ -26,9 +26,11 @@ import {
 } from 'iview'
 
 Vue.component('Button', Button)
+Vue.component('iButton', Button)
 Vue.component('Form', Form)
 Vue.component('FormItem', FormItem)
 Vue.component('Input', Input)
+Vue.component('iInput', Input)
 Vue.component('AutoComplete', AutoComplete)
 Vue.component('InputNumber', InputNumber)
 Vue.component('Select', Select)
