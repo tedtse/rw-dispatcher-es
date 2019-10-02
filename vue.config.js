@@ -1,6 +1,7 @@
 const path = require('path')
 
 module.exports = {
+  assetsDir: 'rw-dispatcher',
   chainWebpack: config => {
     config.resolve.alias
       .set('rw-dispatcher-helper', path.resolve(__dirname, 'packages/rw-dispatcher-helper'))

@@ -22,19 +22,21 @@ import './assets/style/component.scss'
 import './assets/style/demo/element-ui/index.scss'
 import './assets/style/demo/iview/index.less'
 
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+// import ElementUI from 'element-ui'
+// import 'element-ui/lib/theme-chalk/index.css'
+import './plugins/element-ui'
 import ElementUIRWDispatcher from 'element-ui-rw-dispatcher'
 import 'element-ui-rw-dispatcher/styles/index.scss'
 
-import iView from 'iview'
+// import iView from 'iview'
 import 'iview/dist/styles/iview.css'
+import './plugins/iview'
 import iViewRWDispatcher from 'iview-rw-dispatcher'
 import 'iview-rw-dispatcher/styles/index.less'
 
-Vue.use(ElementUI)
+// Vue.use(ElementUI)
 Vue.use(ElementUIRWDispatcher)
-Vue.use(iView)
+// Vue.use(iView)
 Vue.use(iViewRWDispatcher)
 
 Vue.component('DemoBlock', DemoBlock)
