@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import hljs from 'highlight.js'
 import App from './App'
 import router from './router'
 
@@ -34,6 +33,8 @@ import './plugins/iview'
 import iViewRWDispatcher from 'iview-rw-dispatcher'
 import 'iview-rw-dispatcher/styles/index.less'
 
+import hljs from 'highlight.js/lib/highlight'
+
 // Vue.use(ElementUI)
 Vue.use(ElementUIRWDispatcher)
 // Vue.use(iView)
@@ -48,6 +49,11 @@ Vue.component('ElementScopeSlot', ElementScopeSlot)
 Vue.component('iviewDispatcherQuickstart', iViewDispatcherQuickstart)
 Vue.component('iviewAttributes', iViewAttributes)
 Vue.component('iviewScopeSlot', iViewScopeSlot)
+
+hljs.registerLanguage('javascript', require('highlight.js/lib/languages/javascript'))
+hljs.registerLanguage('css', require('highlight.js/lib/languages/css'))
+hljs.registerLanguage('shell', require('highlight.js/lib/languages/shell'))
+hljs.registerLanguage('xml', require('highlight.js/lib/languages/xml'))
 
 router.afterEach(route => {
   // https://github.com/highlightjs/highlight.js/issues/909#issuecomment-131686186

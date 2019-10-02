@@ -82,6 +82,7 @@ export default {
     .container {
       height: 100%;
       box-sizing: border-box;
+      border-bottom: 1px solid #dcdfe6;
     }
     .nav-lang-spe {
       color: #888;

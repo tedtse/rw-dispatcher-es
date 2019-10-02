@@ -11,7 +11,6 @@ module.exports = function(source) {
   const startTagLen = startTag.length;
   const endTag = ':element-demo-->';
   const endTagLen = endTag.length;
-// console.log('********************', content, '********************')
   let componenetsString = '';
   let id = 0; // demo 的 id
   let output = []; // 输出的内容
@@ -21,7 +20,6 @@ module.exports = function(source) {
   let commentEnd = content.indexOf(endTag, commentStart + startTagLen);
   while (commentStart !== -1 && commentEnd !== -1) {
     output.push(content.slice(start, commentStart));
-
     const commentContent = content.slice(commentStart + startTagLen, commentEnd);
     const html = stripTemplate(commentContent);
     const script = stripScript(commentContent);

@@ -1,12 +1,10 @@
 <template>
   <div id="app" :class="{ 'is-component': isComponent }">
-    <div class="header">
-      <main-header
-        :class="[
-          'main-header'
-        ]"
-      />
-    </div>
+    <main-header
+      :class="[
+        'main-header'
+      ]"
+    />
     <div :class="['main-cnt']">
       <router-view />
     </div>
