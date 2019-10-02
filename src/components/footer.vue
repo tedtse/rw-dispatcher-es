@@ -3,56 +3,63 @@
     <div class="container">
       <div class="footer-main">
         <h4>链接</h4>
-        <a
-          href="#"
-          target="_blank"
-          class="footer-main-link"
-        >代码仓库</a>
-        <a
-          href="#"
-          target="_blank"
-          class="footer-main-link"
-        >demo</a>
-      </div>
-      <div class="footer-main">
-      </div>
-      <div class="footer-social">
+        <div>
+          <a
+            href="https://github.com/tedtse/rw-dispatcher-es"
+            target="_blank"
+            class="footer-main-link"
+          >代码仓库</a>
+          <a
+            href="https://github.com/tedtse/element-ui-rw-dispatcher-example"
+            target="_blank"
+            class="footer-main-link"
+          >El dispatcher demo</a>
+          <a
+            href="https://github.com/tedtse/iview-rw-dispatcher-example"
+            target="_blank"
+            class="footer-main-link"
+          >Ivu dispatcher demo</a>
+        </div>
       </div>
     </div>
   </footer>
 </template>
 
 <style lang="scss">
+  $footer-height: 141px;
   .footer {
     background-color: #F7FBFD;
     width: 100%;
     padding: 40px 150px;
-    margin-top: -169px;
+    margin-top: -$footer-height;
     box-sizing: border-box;
-    height: 169px;
+    height: $footer-height;
     .container {
       box-sizing: border-box;
       width: auto;
     }
     .footer-main {
       font-size: 0;
-      display: inline-block;
       vertical-align: top;
-      margin-right: 110px;
+
       h4 {
         font-size: 18px;
         color: #333;
         line-height: 1;
         margin: 0 0 15px 0;
       }
-      .footer-main-link {
-        display: block;
-        margin: 0;
-        line-height: 2;
-        font-size: 14px;
-        color: #666;
-        &:hover {
-          color: #333;
+      > div {
+        display: flex;
+        > .footer-main-link {
+          display: flex;
+          flex: 1;
+          margin: 0;
+          line-height: 2;
+          font-size: 14px;
+          color: #666;
+          &:hover {
+            color: #333;
+          }
         }
       }
     }
@@ -120,6 +127,12 @@
     .footer {
       .footer-main {
         margin-bottom: 30px;
+        > div {
+          display: block;
+          > .footer-main-link {
+            display: block;
+          }
+        }
       }
     }
   }
