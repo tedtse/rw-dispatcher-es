@@ -1,14 +1,19 @@
 module.exports = {
   plugins: [
     'lodash',
-    ['component', {
-      libraryName: 'element-ui',
-      styleLibraryName: 'theme-chalk'
-    }],
-    ['import', {
-      libraryName: 'iview',
-      libraryDirectory: 'src/components'
-    }]
+    ...(process.env.NODE_ENV === 'test'
+      ? []
+      : [
+          ['component', {
+            libraryName: 'element-ui',
+            styleLibraryName: 'theme-chalk'
+          }],
+          ['import', {
+            libraryName: 'iview',
+            libraryDirectory: 'src/components'
+          }]
+      ]
+    )
   ],
   presets: [
     '@vue/app'

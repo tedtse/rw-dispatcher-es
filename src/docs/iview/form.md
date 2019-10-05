@@ -67,7 +67,7 @@ export default {
         level: 5,
         duration: 7,
         date1: '2019-06-18',
-        date2: new Date(2019, 6, 18, 0, 0, 0),
+        date2: new Date(2019, 6, 18, 0, 6, 0),
         delivery: false,
         type: ['单纯品牌曝光'],
         resource: '线下场地免费',
