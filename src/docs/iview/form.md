@@ -83,7 +83,9 @@ export default {
 }
 </script>
 ```
+:::
 
+<!-- 
 ### 表单内组件尺寸控制
 :::demo
 ```html
@@ -156,4 +158,4 @@ export default {
 }
 </script>
 ```
-:::
+::: -->

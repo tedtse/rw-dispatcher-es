@@ -117,7 +117,6 @@ export default {
     },
     scrollHandler () {
       const { top, bottom, left } = this.$refs.meta.getBoundingClientRect()
-      console.log(top, bottom, left)
       this.fixedControl = bottom > document.documentElement.clientHeight &&
         top + 44 <= document.documentElement.clientHeight
       this.$refs.control.style.left = this.fixedControl ? `${left}px` : '0'
@@ -171,7 +170,6 @@ export default {
       }
       setTimeout(() => {
         this.scrollParent = document.querySelector('.page-component__scroll > .el-scrollbar__wrap')
-        console.log(this.scrollParent)
         this.scrollParent && this.scrollParent.addEventListener('scroll', this.scrollHandler)
         this.scrollHandler()
       }, 200)

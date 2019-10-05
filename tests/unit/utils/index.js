@@ -7,7 +7,7 @@ import iViewRWDispatcher from 'iview-rw-dispatcher'
 import merge from 'lodash/merge'
 import Wrapper from './wrapper'
 
-export const createWrapper = (dispatcher, wrapperOpts = {}) => {
+export const createWrapper = (dispatcher, wrapperOpts) => {
   return mount(Wrapper, merge({
     slots: {
       default: dispatcher
@@ -31,4 +31,3 @@ export const createLocalVue4Ele = (opts = {}) => {
   localVue.use(ElementUIRWDispatcher, opts)
   return localVue
 }
-
