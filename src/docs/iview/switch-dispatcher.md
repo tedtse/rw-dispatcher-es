@@ -187,13 +187,13 @@ export default {
   <template #append>
     <!-- <tr>
       <td>${namespace}-trueValue<br />（默认 rw-dispatcher-trueValue</td>
-      <td>"read" 转态下 Switch 为真时的文字提示</td>
+      <td>"read" 状态下 Switch 为真时的文字提示</td>
       <td>String</td>
       <td>是</td>
     </tr>
     <tr>
       <td>${namespace}-falseValue<br />（默认 rw-dispatcher-falseValue）</td>
-      <td>"read" 转态下 Switch 为假时的文字提示</td>
+      <td>"read" 状态下 Switch 为假时的文字提示</td>
       <td>String</td>
       <td>否</td>
     </tr> -->
