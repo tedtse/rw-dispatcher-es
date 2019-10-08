@@ -29,6 +29,11 @@
             </router-link>
           </li> -->
           <li class="nav-item">
+            <router-link to="/scene" active-class="active">
+              场景
+            </router-link>
+          </li>
+          <li class="nav-item">
             <router-link to="/element-ui" active-class="active">
               element-ui
             </router-link>
