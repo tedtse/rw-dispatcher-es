@@ -1,7 +1,23 @@
 # rw-dispatcher-es
 
+## submodule init
+```
+git submodule init
+git submodule update
+```
+
 ## Project setup
 ```
+cd packages/element-ui-rw-dispatcher
+yarn install
+
+cd ../iview-rw-dispatcher
+yarn install
+
+cd ../rw-dispatcher-helper
+yarn install
+
+cd ../../
 yarn install
 ```
 
