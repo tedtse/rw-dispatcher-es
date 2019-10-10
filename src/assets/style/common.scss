@@ -153,6 +153,12 @@ button, input, select, textarea {
 .demo {
   margin: 20px 0;
 }
+.link {
+  text-align: right;
+  a {
+    color: #409EFF;
+  }
+}
 @media (max-width: 1140px) {
   .container,
   .page-container {

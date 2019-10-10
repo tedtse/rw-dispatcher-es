@@ -1,5 +1,10 @@
 <template>
   <div class="elem-table">
+    <div class="link">
+      <el-button type="text" size="large" icon="el-icon-link">
+        <a href="https://github.com/tedtse/rw-dispatcher-es/blob/master/src/views/scene/table.vue" target="_blank">源码</a>
+      </el-button>
+    </div>
     <p>双击单元格进入编辑状态</p>
     <el-table :data="tableData">
       <el-table-column prop="date" label="日期" width="220">
@@ -131,9 +136,10 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .elem-table {
-    padding: 0 20px 60px 20px;
+    width: 1140px;
+    margin: 0 auto 60px auto;
     font-size: 14px;
     p {
       text-align: center;
