@@ -1,11 +1,11 @@
 <template>
-  <div class="elm-container">
+  <div class="scene-container">
     <div class="link">
       <el-button type="text" size="large" icon="el-icon-link">
         <a href="https://github.com/tedtse/rw-dispatcher-es/blob/master/src/views/scene/form.vue" target="_blank">源码</a>
       </el-button>
     </div>
-    <div class="elm-body">
+    <div class="scene-body">
       <el-form ref="form" :model="form" label-width="80px">
         <el-form-item label="活动名称">
           <el-input-dispatcher v-model="form.name" />
@@ -91,23 +91,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-  .elm-container {
-    width: 1140px;
-    margin: 0 auto 60px auto;
-    .elm-body {
-      text-align: left;
-      border-radius: 5px;
-      box-sizing: border-box;
-      box-shadow: 0 0 8px 5px #00000010;
-      padding: 40px 20px;
-      width: 768px;
-      margin: 20px auto;
-      .el-rate, .el-rate__icon {
-        height: 40px !important;
-        line-height: 40px !important;
-      }
-    }
-  }
-</style>

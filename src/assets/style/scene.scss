@@ -1,0 +1,74 @@
+.scene-container {
+  width: 1140px;
+  margin: 0 auto 60px auto;
+  font-size: 14px;
+  .scene-body {
+    text-align: left;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px 5px #00000010;
+    padding: 40px 20px;
+    width: 768px;
+    margin: 20px auto;
+  }
+  p {
+    text-align: center;
+    margin: 20px 0;
+    color: red;
+  }
+  .cell {
+    .el-popover__reference {
+      > * {
+        width: 100%;
+      }
+    }
+  }
+  .el-rate__icon {
+    line-height: 40px !important;
+  }
+  .el-card__header {
+    .el-button {
+      float: right;
+      margin-top: -10px;
+    }
+  }
+  .link {
+    text-align: right;
+    .el-button {
+      float: right;
+      margin-right: 10px;
+    }
+    a {
+      color: #409EFF;
+    }
+    &::after {
+      content: "";
+      clear: both;
+      height: 0;
+      zoom: 1;
+      display: block;
+      overflow: hidden;
+    }
+  }
+  .list {
+    > div {
+      width: 50%;
+      padding: 15px;
+      float: left; 
+    }
+  }
+}
+
+@media(max-width: 1140px) {
+  .scene-container {
+    width: 100%;
+    .scene-body {
+      width: 100%;
+    }
+    .list {
+      > div {
+        width: 100%;
+      }
+    }
+  }
+}

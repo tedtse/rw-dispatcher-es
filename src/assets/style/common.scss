@@ -153,11 +153,13 @@ button, input, select, textarea {
 .demo {
   margin: 20px 0;
 }
-.link {
-  text-align: right;
-  a {
-    color: #409EFF;
-  }
+.clear {
+  content: "";
+  clear: both;
+  height: 0;
+  zoom: 1;
+  display: block;
+  overflow: hidden;
 }
 @media (max-width: 1140px) {
   .container,

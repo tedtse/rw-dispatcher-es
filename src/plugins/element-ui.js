@@ -35,7 +35,8 @@ import {
   Tooltip,
   Table,
   TableColumn,
-  Popover
+  Popover,
+  Card
 } from 'element-ui'
 
 Vue.use(Autocomplete)
@@ -73,3 +74,4 @@ Vue.use(Tooltip)
 Vue.use(Table)
 Vue.use(TableColumn)
 Vue.use(Popover)
+Vue.use(Card)

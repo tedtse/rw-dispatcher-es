@@ -1,11 +1,12 @@
 <template>
-  <div class="elem-table">
+  <div class="scene-container">
     <div class="link">
       <el-button type="text" size="large" icon="el-icon-link">
         <a href="https://github.com/tedtse/rw-dispatcher-es/blob/master/src/views/scene/table.vue" target="_blank">源码</a>
       </el-button>
+      <p style="margin-right: 40px; color: red; text-align: center">双击单元格进入编辑状态</p>
     </div>
-    <p>双击单元格进入编辑状态</p>
+
     <el-table :data="tableData">
       <el-table-column prop="date" label="日期" width="220">
         <template slot-scope="scope">
@@ -135,23 +136,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-  .elem-table {
-    width: 1140px;
-    margin: 0 auto 60px auto;
-    font-size: 14px;
-    p {
-      text-align: center;
-      margin: 20px 0;
-      color: red;
-    }
-    .cell {
-      .el-popover__reference {
-        > * {
-          width: 100%;
-        }
-      }
-    }
-  }
-</style>

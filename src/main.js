@@ -18,6 +18,7 @@ import 'normalize.css/normalize.css'
 import 'highlight.js/styles/color-brewer.css'
 import './assets/style/common.scss'
 import './assets/style/component.scss'
+import './assets/style/scene.scss'
 import './assets/style/demo/element-ui/index.scss'
 import './assets/style/demo/iview/index.less'
 
