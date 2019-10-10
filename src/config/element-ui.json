@@ -21,6 +21,10 @@
       {
         "path": "/config-priority",
         "title": "配置优先级"
+      },
+      {
+        "path": "/typescript",
+        "title": "Typescript"
       }
     ]
   },
