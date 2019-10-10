@@ -192,3 +192,6 @@ export default {
 
 ### InputNumber Scoped Slots
 <iview-scope-slot />
+
+### 其他属性、Slots、Events
+与官方 `InputNumber` 的完全一致，[官方组件](https://www.iviewui.com/components/input-number#API)。

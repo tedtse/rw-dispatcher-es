@@ -1,5 +1,5 @@
 ## 局部配置
-如果组件的实际配置与全局配置不同，需要用局部配置覆盖全局配置，配置名默认`rwDispatcherConfig`。局部配置与全局配置的唯一区别，是局部配置**没有**命名空间(namespace)选项，而全局配置有。
+如果组件的实际配置与全局配置不同，需要用局部配置覆盖全局配置，配置名默认`rwDispatcherConfig`。局部配置与全局配置的唯一区别，是局部配置**没有**命名空间(namespace)选项，而全局配置有。[实例](https://github.com/tedtse/iview-rw-dispatcher-example/tree/master/configuaration)
 
 ### 使用
 ```html

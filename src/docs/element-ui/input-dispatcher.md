@@ -317,3 +317,6 @@ export default {
 
 ### Autocomplete Scoped Slots
 <element-scope-slot />
+
+### 其他属性、Slots、Events
+与官方 `ElInput`、 `ElAutocomplete` 的完全一致，[官方组件](https://element.eleme.cn/#/zh-CN/component/input#input-attributes)。

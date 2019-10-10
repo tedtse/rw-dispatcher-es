@@ -212,3 +212,6 @@ export default {
 
 ### Radio Scoped Slots
 <iview-scope-slot />
+
+### 其他属性、Slots、Events
+与官方 `Radio` 的完全一致，[官方组件](https://www.iviewui.com/components/radio#API)。

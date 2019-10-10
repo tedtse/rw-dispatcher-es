@@ -1,5 +1,5 @@
 ## 全局配置
-全局配置在插件初始化时配置。
+全局配置在插件初始化时配置，是分发器在读状态中渲染逻辑中涉及到的一些配置。[实例](https://github.com/tedtse/element-ui-rw-dispatcher-example/tree/master/configuaration)
 
 ### 使用
 ```javascript
@@ -33,7 +33,7 @@ Vue.use(ElementUiRwDispatcher, {
     <tr>
       <td>namespace</td>
       <td>
-        命名空间，read 状态渲染函数、状态管理、局部配置等参数的前缀。
+        命名空间，read 状态渲染函数、状态管理、局部配置等参数的前缀。<a href="https://github.com/tedtse/element-ui-rw-dispatcher-example/tree/master/namespace">实例</a>
         <el-tooltip placement="top">
           <div slot="content">
             状态管理参数是 rwDispatcherState（camelCase）；<br />

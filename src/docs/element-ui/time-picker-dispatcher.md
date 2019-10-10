@@ -289,3 +289,6 @@ export default {
 
 ### TimeSelect Scoped Slots
 <element-scope-slot />
+
+### 其他属性、Slots、Events
+与官方 `ElTimePicker` 的完全一致，[官方组件](https://element.eleme.cn/#/zh-CN/component/time-picker#attributes)。

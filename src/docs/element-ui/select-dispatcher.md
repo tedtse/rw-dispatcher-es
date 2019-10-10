@@ -617,3 +617,6 @@ export default {
 
 ### Scoped Slots
 <element-scope-slot />
+
+### 其他属性、Slots、Events
+与官方 `ElSelect` 的完全一致，[官方组件](https://element.eleme.cn/#/zh-CN/component/select#select-attributes)。

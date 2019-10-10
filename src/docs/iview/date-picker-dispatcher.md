@@ -343,3 +343,6 @@ export default {
 
 ### DatePicker Scoped Slots
 <iview-scope-slot />
+
+### 其他属性、Slots、Events
+与官方 `DatePicker` 的完全一致，[官方组件](https://www.iviewui.com/components/date-picker#API)。

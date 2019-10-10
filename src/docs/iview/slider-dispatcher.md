@@ -183,3 +183,6 @@ export default {
 
 ### Slider Scoped Slots
 <iview-scope-slot />
+
+### 其他属性、Slots、Events
+与官方 `Slider` 的完全一致，[官方组件](https://www.iviewui.com/components/slider#API)。

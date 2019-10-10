@@ -1,14 +1,16 @@
 # rw-dispatcher-es
 
+vue 表单组件读写分发器， element-ui 和 iview 的表单组件扩展，一套代码实现表单的编辑和详情（预览功能）。
+
 文档地址: [http://xiepeng.cc/rw-dispatcher/#/](http://xiepeng.cc/rw-dispatcher/#/)
 
-## submodule init
+## git submodule init
 ```
 git submodule init
 git submodule update
 ```
 
-## Project setup
+## 安装
 ```
 cd packages/element-ui-rw-dispatcher
 yarn install
@@ -23,30 +25,17 @@ cd ../../
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### 开发
 ```
 yarn run serve
 ```
 
-### Compiles and minifies for production
+### 构建
 ```
 yarn run build
 ```
 
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Run your unit tests
+### 单元测试
 ```
 yarn run test:unit
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

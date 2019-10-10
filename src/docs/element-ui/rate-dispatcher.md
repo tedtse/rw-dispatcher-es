@@ -141,3 +141,6 @@ export default {
 
 ### Scoped Slots
 <element-scope-slot />
+
+### 其他属性、Slots、Events
+与官方 `ElRate` 的完全一致，[官方组件](https://element.eleme.cn/#/zh-CN/component/rate#attributes)。
