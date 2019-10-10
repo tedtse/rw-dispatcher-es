@@ -32,7 +32,10 @@ import {
   Footer,
   Backtop,
   Scrollbar,
-  Tooltip
+  Tooltip,
+  Table,
+  TableColumn,
+  Popover
 } from 'element-ui'
 
 Vue.use(Autocomplete)
@@ -67,3 +70,6 @@ Vue.use(Footer)
 Vue.use(Backtop)
 Vue.use(Scrollbar)
 Vue.use(Tooltip)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(Popover)

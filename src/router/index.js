@@ -33,6 +33,11 @@ export default new VueRouter({
           path: 'detail',
           component: () => import('../views/scene/form.vue'),
           meta: { state: 'read' }
+        },
+        {
+          name: 'SceneTable',
+          path: 'table',
+          component: () => import('../views/scene/table.vue')
         }
       ]
     },

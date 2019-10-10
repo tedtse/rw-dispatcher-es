@@ -2,7 +2,8 @@
   <div>
     <div id="nav">
       <router-link to="/scene/edit">编辑</router-link> |
-      <router-link to="/scene/detail">详情</router-link>
+      <router-link to="/scene/detail">详情</router-link> |
+      <router-link to="/scene/table">可编辑表格</router-link>
     </div>
     <router-view />
   </div>
