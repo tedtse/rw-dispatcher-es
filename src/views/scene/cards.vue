@@ -2,7 +2,7 @@
   <div class="scene-container">
     <div class="link">
       <el-button type="text" size="large" icon="el-icon-link">
-        <!-- <a href="https://github.com/tedtse/rw-dispatcher-es/blob/master/src/views/scene/form.vue" target="_blank">源码</a> -->
+        <a href="https://github.com/tedtse/rw-dispatcher-es/blob/master/src/views/scene/cards.vue" target="_blank">源码</a>
       </el-button>
     </div>
     <div class="list clearfix">

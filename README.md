@@ -4,6 +4,20 @@ vue 表单组件读写分发器， element-ui 和 iview 的表单组件扩展，
 
 文档地址: [http://xiepeng.cc/rw-dispatcher/#/](http://xiepeng.cc/rw-dispatcher/#/)
 
+## 它能做什么
+
+它可以实现表单编辑页和详情页的代码合并
+
+![编辑详情切换](./src/assets/images/scene_edit-detail.gif)
+
+也可以在表格中双击单元格直接编辑
+
+![编辑单元格](./src/assets/images/scene_table.gif)
+
+还可以在卡片中直接切换到编辑状态
+
+![编辑单元格](./src/assets/images/scene_card.gif)
+
 ## git submodule init
 ```
 git submodule init

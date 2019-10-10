@@ -7,7 +7,7 @@ import sceneRoutes from './scene'
 Vue.use(VueRouter)
 
 export default new VueRouter({
-  scrollBehavior: () => ({ y: 0 }),
+  // scrollBehavior: () => ({ y: 0 }),
   routes: [
     {
       name: 'Hello',

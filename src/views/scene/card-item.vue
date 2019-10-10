@@ -1,5 +1,5 @@
 <template>
-  <el-card>
+  <el-card style="height: 350px;">
     <div slot="header" class="clearfix">
       <span>ID: {{ infoClone.id }}</span>
       <el-button
