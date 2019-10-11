@@ -35,11 +35,12 @@
  *
  * 读状态下 ElForm 的 model 是 props form
  * 写状态下 ElForm 的 model 是 props form 的深拷贝 formClone，
- * 深度观察 formClone，有修改时通过 $emit('update:form', ...) 通知父组件同步 props form
+ * 深度观察 formClone，有修改时先用 diff 算出差异，再通过 $emit 通知父组件同步 props form
  * 因为 props form 是其它的组件的数据，直接修改是很危险的行为
  *
  */
 import _ from 'lodash'
+import { diff } from 'deep-diff'
 
 export default {
   props: {
@@ -59,6 +60,11 @@ export default {
       rwDispatcherProvider: this
     }
   },
+  data () {
+    return {
+      formClone: {}
+    }
+  },
   computed: {
     activeForm () {
       return this.rwDispatcherState === 'write' ? this.formClone : this.form
@@ -68,13 +74,12 @@ export default {
     formClone: {
       deep: true,
       handler () {
-        this.$emit('update:form', this.formClone)
+        // diff
+        const differences = diff(this.form, this.formClone)
+        if (differences && differences.length) {
+          this.$emit('change', differences)
+        }
       }
-    }
-  },
-  data () {
-    return {
-      formClone: {}
     }
   },
   created () {

@@ -6,10 +6,10 @@
       </el-button>
     </div>
     <!-- props 用 kebeb-case(中横线) -->
-    <sub-form :form.sync="form" rw-dispatcher-state="write" />
+    <sub-form :form="form" rw-dispatcher-state="write" @change="asyncForm" />
     <el-dialog title="预览" :visible.sync="priewVisible" fullscreen>
       <div class="modal-wrapper">
-        <sub-form :form.sync="form" rw-dispatcher-state="read" />
+        <sub-form :form="form" rw-dispatcher-state="read" />
       </div>
     </el-dialog>
     <div class="operate">
@@ -32,6 +32,7 @@ export default {
       form: {
         name: '618电器折扣日',
         level: 5,
+        duration: 7,
         region: 'shanghai',
         date1: '2019-06-18',
         date2: new Date(2019, 6, 18, 0, 0, 0),
@@ -40,6 +41,13 @@ export default {
     }
   },
   methods: {
+    asyncForm (differences) {
+      differences.forEach(dif => {
+        if (dif.kind === 'E') {
+          this.form[dif.path] = dif.rhs
+        }
+      })
+    },
     preview () {
       this.priewVisible = true
     },
