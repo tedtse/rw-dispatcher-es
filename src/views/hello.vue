@@ -1,6 +1,6 @@
 <template>
   <div id="hello">
-    <p>表单是用来实现编辑功能的（写状态），如果要把表单详情显示出来（读状态），我们还需重新写一遍吗？</p>
+    <p>一套代码实现表单的编辑和详情（预览）功能。</p>
     <div class="banner">
       <img src="../assets/images/animation.gif" />
     </div>
