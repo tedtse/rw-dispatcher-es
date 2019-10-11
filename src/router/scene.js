@@ -28,6 +28,11 @@ export default {
       name: 'SceneCards',
       path: 'card',
       component: () => import('../views/scene/cards.vue')
+    },
+    {
+      name: 'ScenePreview',
+      path: 'preview',
+      component: () => import('../views/scene/preview.vue')
     }
   ]
 }

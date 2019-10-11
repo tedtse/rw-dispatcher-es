@@ -36,7 +36,8 @@ import {
   Table,
   TableColumn,
   Popover,
-  Card
+  Card,
+  Dialog
 } from 'element-ui'
 
 Vue.use(Autocomplete)
@@ -75,3 +76,4 @@ Vue.use(Table)
 Vue.use(TableColumn)
 Vue.use(Popover)
 Vue.use(Card)
+Vue.use(Dialog)

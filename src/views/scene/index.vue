@@ -4,7 +4,8 @@
       <router-link to="/scene/edit">编辑</router-link> |
       <router-link to="/scene/detail">详情</router-link> |
       <router-link to="/scene/table">表格</router-link> |
-      <router-link to="/scene/card">卡片</router-link>
+      <router-link to="/scene/card">卡片</router-link> |
+      <router-link to="/scene/preview">预览</router-link>
     </div>
     <router-view />
   </div>
