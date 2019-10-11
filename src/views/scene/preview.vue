@@ -2,7 +2,7 @@
   <div class="scene-container">
     <div class="link">
       <el-button type="text" size="large" icon="el-icon-link">
-        <a href="https://github.com/tedtse/rw-dispatcher-es/blob/master/src/views/scene/form.vue" target="_blank">源码</a>
+        <a href="https://github.com/tedtse/rw-dispatcher-es/blob/master/src/views/scene/preview.vue" target="_blank">源码</a>
       </el-button>
     </div>
     <!-- props 用 kebeb-case(中横线) -->
@@ -13,15 +13,8 @@
       </div>
     </el-dialog>
     <div class="operate">
-      <el-button
-        type="text"
-        icon="el-icon-view"
-        @click="preview"
-      >预览</el-button>
-      <el-button
-        type="primary"
-        @click="submit"
-      >提交</el-button>
+      <el-button type="text" icon="el-icon-view" @click="preview">预览</el-button>
+      <el-button type="primary" @click="submit">提交</el-button>
     </div>
   </div>
 </template>
