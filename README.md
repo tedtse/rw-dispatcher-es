@@ -1,12 +1,12 @@
 # rw-dispatcher-es
 
-vue 表单组件读写分发器， element-ui 和 iview 的表单组件扩展，一套代码实现表单的编辑和详情（预览功能）。
+vue 表单组件读写分发器， element-ui 和 iview 的表单组件扩展，一套代码实现表单的编辑和详情（预览）功能。
 
 文档地址: [http://xiepeng.cc/rw-dispatcher/#/](http://xiepeng.cc/rw-dispatcher/#/)
 
 ## 它能做什么
 
-它可以实现表单编辑页和详情页的代码合并
+它可以一套代码实现表单的编辑和详情（预览）功能
 
 ![编辑详情切换](./src/assets/images/scene_edit-detail.gif)
 
