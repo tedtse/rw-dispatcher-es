@@ -13,7 +13,7 @@
       </div>
     </el-dialog>
     <div class="operate">
-      <el-button type="text" icon="el-icon-view" @click="preview">预览</el-button>
+      <el-button icon="el-icon-view" @click="preview">预览</el-button>
       <el-button type="primary" @click="submit">提交</el-button>
     </div>
   </div>
@@ -36,7 +36,8 @@ export default {
         region: 'shanghai',
         date1: '2019-06-18',
         date2: new Date(2019, 6, 18, 0, 0, 0),
-        delivery: false
+        delivery: false,
+        desc: '凡在实体店购买指定商品，立刻过得赠品一份'
       }
     }
   },
@@ -59,10 +60,7 @@ export default {
 
 <style lang="scss" scoped>
   .modal-wrapper {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px 0;
-    max-width: 800px;
+    text-align: center;
   }
   .operate {
     text-align: right;
