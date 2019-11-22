@@ -26,6 +26,28 @@ const options1 = [
 describe('SelectDispatcher for ElementUI', () => {
   useElePlugin()
 
+  it('text is ""', () => {
+    const wrapper = createWrapper({
+      template: `
+        <el-select-dispatcher v-model="value" clearable placeholder="请选择">
+          <el-option
+            v-for="item in options"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value"
+          />
+        </el-select-dispatcher>
+      `,
+      data () {
+        return {
+          value: undefined,
+          options: options1
+        }
+      }
+    })
+    expect(wrapper.text()).toBe('')
+  })
+
   it('text is "双皮奶"', () => {
     const wrapper = createWrapper({
       template: `
