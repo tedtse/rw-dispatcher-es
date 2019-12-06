@@ -28,5 +28,5 @@ RWDispatcher 暴露出来以下方法
 | ---- | -------- | ---- | ---- |
 | getRWDispatcherState | 获取状态 | | 'read' \| 'write' |
 | setRWDispatcherState | 设置状态 | 'read' \| 'write' | undefined |
-| getRWDispatcherState | 获取局部配置 | | object |
-| setRWDispatcherState | 设置局部配置 | object | undefined |
+| getRWDispatcherConfig | 获取局部配置 | | object |
+| setRWDispatcherConfig | 设置局部配置 | object | undefined |
