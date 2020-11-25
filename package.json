@@ -14,7 +14,7 @@
     "core-js": "^2.6.5",
     "deep-diff": "^1.0.2",
     "element-ui": "^2.11.1",
-    "highlight.js": "^9.15.10",
+    "highlight.js": "^10.1.2",
     "iview": "^3.5.0-rc.1",
     "normalize.css": "^8.0.1",
     "vue": "^2.6.10",
